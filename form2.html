@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-digital 3기</title>
+</head>
+<body>
+    <form method="get" action="a.html">
+        <!-- form 태그 : 2가지 속성을 가짐; method & action--><!--주소에서 /a.html?txt1=안녕 에서 ? = get 속성(id,pw 다 오픈됨) , id,pw와 같은 정보를 입력해야할 때 method = "post" 사용--><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><!--중복선택 하려면 type = "check box"로 해야함 radio는 중복버튼 x-->
+        <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <br><!--입력받을 수 있음-->
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><!--select tag-->
+        <br>
+        <input type="text" name="txt1" required><br><!--required : 입력이 제대로 안끝나면 경고문구 뜸-->
+        <label for="emailid">E-mail</label>
+        <input type="email" id="emailid" name="email" required><br>
+        <fieldset>
+            <legend>좋아하는 언어</legend>
+            <input type="radio" id="pythonid" name="fav" value="python">
+            <label for="pythonid">PYTHON</label><!-- label 이용하면 글자를 눌러도 박스 선택됨-->
+            <input type="radio" name="fav" value="R">R
+            <input type="radio" name="fav" value="JAVA">JAVA
+        </fieldset>
+        <input type="submit" value="확인" /><!--submit : 입력하고 확인버튼 누르면 name='txt1'으로 설정한 페이지로 이동-->
+        <input type="reset" value="취소" />
+        <input type="button" value="버튼" /><!--input type 중요중요-->
+        <button>버튼2</button><!--#d28989 색 이쁨-->
+    </form>
+
+</body>
+</html>
