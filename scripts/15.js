@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const bts = document.querySelectorAll('button');
     console.log('bts');
 
+    //배열 리스트로 나오게 하기 
+
+
     //배열 안에 있는 것들을 하나씩 가져오기
     //case1 ; for loop
     // for (let i = 0; i < bts.length; i++) {
@@ -17,17 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // })
 
     //case2-2 ; forEach(inx추가)
-    // bts.forEach((item, idx)=>{
-    //     console.log(idx,item.textContent);
-    // })
-
-    //case3 ; for in
-    for(let idx in bts){
-        console.log(bts[idx].textContent);
+    bts.forEach((item, idx)=>{
+        console.log(idx,item.textContent);
+    })
+    document.querySelectorAll('#h2id').textContent = bts.textContent;
     
-    }
+    //case3 ; for in
+    // for(let idx in bts){
+    //     console.log(bts[idx].textContent);
+    
+    // }
 
-    document.querySelectorAll('#h2id').textContent = bts[idx].textContent;
+    
     //case4-1 ; for of
     // for(let item of bts){
     //     console.log(item.textContent);
@@ -38,6 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //     console.log(k,v.textContent);
     // }
 
-    //배열 리스트로 나오게 하기 
+
 
 });
