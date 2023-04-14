@@ -12,7 +12,7 @@ const show = () => {
     event.preventDefault();
 
     //랜덤 수 생성하기(1-6)
-    let n = Math.floor(Math.random() * 6) + 1;
+    let n = Math.floor(Math.random() * 6) + 1; //Math.floor(정수만 나오게 함) / Math.random() * num = 0~num까지 랜덤 수 나옴
     console.log(n); //console.log() :
     /*if(n==1){
     document.getElementById("h2id").innerHTML = "<img src='../IMAGE/1.png'>"; }//''&""안에 html 코드 쓸 수 있음
